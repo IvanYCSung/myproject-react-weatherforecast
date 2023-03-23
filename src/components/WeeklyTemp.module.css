@@ -1,0 +1,165 @@
+.container {
+  width: 50%;
+  height: 35rem;
+  margin-left: 1%;
+  display: flex;
+  justify-content: end;
+  gap: 2%;
+}
+
+.temp-container {
+  min-width: 14.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.temp {
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 1px rgba(150, 150, 150, 0.5);
+}
+
+.clear-sky {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgb(255, 255, 255) 80%
+    ),
+    url("../img/clear-sky.jpg");
+  background-size: 350%;
+}
+
+.cloudy-sky {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgb(255, 255, 255) 80%
+    ),
+    url("../img/cloudy-sky.jpg");
+  background-size: 350%;
+}
+
+.drizzling-raining-sky {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgb(255, 255, 255) 80%
+    ),
+    url("../img/drizzling-raining-sky.jpg");
+  background-size: 350%;
+}
+
+.snowing-sky {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgb(255, 255, 255) 80%
+    ),
+    url("../img/snowing-sky.jpg");
+  background-size: 350%;
+}
+
+.thunderstorm-sky {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgb(255, 255, 255) 80%
+    ),
+    url("../img/thunderstorm-sky.jpg");
+  background-size: 350%;
+}
+
+/************** 640px / 16px = 40em **************/
+@media (max-width: 40em) {
+  .container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 0;
+  }
+
+  .temp-container {
+    height: 15rem;
+    display: flex;
+    flex-direction: row;
+    gap: 12rem;
+  }
+
+  .temp {
+    font-size: 8rem;
+    padding-right: 2rem;
+  }
+
+  .clear-sky {
+    background-image: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0),
+        rgb(255, 255, 255) 80%
+      ),
+      url("../img/clear-sky.jpg");
+    background-size: 100%;
+  }
+
+  .cloudy-sky {
+    background-image: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0),
+        rgb(255, 255, 255) 80%
+      ),
+      url("../img/cloudy-sky.jpg");
+    background-size: 100%;
+  }
+
+  .drizzling-raining-sky {
+    background-image: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0),
+        rgb(255, 255, 255) 85%
+      ),
+      url("../img/drizzling-raining-sky.jpg");
+    background-size: 100%;
+  }
+
+  .snowing-sky {
+    background-image: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0),
+        rgb(255, 255, 255) 80%
+      ),
+      url("../img/snowing-sky.jpg");
+    background-size: 100%;
+  }
+
+  .thunderstorm-sky {
+    background-image: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0),
+        rgb(255, 255, 255) 80%
+      ),
+      url("../img/thunderstorm-sky.jpg");
+    background-size: 100%;
+  }
+}
+
+/************** 480px / 16px = 30em **************/
+@media (max-width: 30em) {
+  .container {
+    gap: 2rem;
+  }
+
+  .temp-container {
+    height: 10rem;
+    gap: 8rem;
+  }
+
+  .temp {
+    font-size: 6rem;
+    padding-right: 1rem;
+  }
+}

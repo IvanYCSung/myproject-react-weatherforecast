@@ -1,0 +1,34 @@
+.button {
+  width: 7rem;
+  height: 3rem;
+  padding: 0 0.4rem;
+  border: 0.2rem solid white;
+  cursor: pointer;
+  background-color: rgb(27, 111, 255);
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background: rgb(11, 99, 252);
+  border-color: white;
+}
+
+/************** 640px / 16px = 40em **************/
+@media (max-width: 40em) {
+  .button {
+    font-size: 1.5rem;
+  }
+}
+
+/************** 480px / 16px = 30em **************/
+@media (max-width: 30em) {
+  .button {
+    width: 5rem;
+    height: 2rem;
+    font-size: 1.2rem;
+  }
+}

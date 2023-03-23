@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/************** 1000px / 16px = 62.5em **************/
+@media (max-width: 62.5em) {
+  html {
+    font-size: 56%;
+  }
+}
+
+/************** 900px / 16px = 56.25em **************/
+@media (max-width: 56.25em) {
+  html {
+    font-size: 48%;
+  }
+}
+
+/************** 765px / 16px = 47.81em **************/
+@media (max-width: 47.81em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+/************** 640px / 16px = 40em **************/
+@media (max-width: 40em) {
+  html {
+    font-size: 30%;
+  }
+}
+
+/************** 480px / 16px = 30em **************/
+@media (max-width: 30em) {
+  html {
+    font-size: 45%;
+  }
+}

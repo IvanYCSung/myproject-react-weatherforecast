@@ -1,0 +1,51 @@
+.nav {
+  max-width: 130rem;
+  height: 7rem;
+  padding: 0 3rem;
+  background-color: rgb(27, 160, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo {
+  color: white;
+  -webkit-text-stroke: 1.5px rgba(200, 200, 200, 0.8);
+  font-size: 3.2rem;
+  font-weight: 900;
+  letter-spacing: -1.5px;
+}
+
+.input {
+  height: 3rem;
+  border: 1.5px solid rgba(200, 200, 200, 0.8);
+  border-radius: 5px;
+}
+
+.searchContainer {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+/************** 480px / 16px = 30em **************/
+@media (max-width: 30em) {
+  .nav {
+    padding: 0 1rem;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 2.2rem;
+  }
+
+  .input {
+    width: 30%;
+    height: 2rem;
+  }
+
+  .searchContainer {
+    justify-content: end;
+  }
+}

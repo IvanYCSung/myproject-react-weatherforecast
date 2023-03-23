@@ -1,0 +1,28 @@
+.container {
+  max-width: 130rem;
+  height: 35rem;
+  display: flex;
+  margin: 0 auto;
+}
+
+/************** 640px / 16px = 40em **************/
+@media (max-width: 40em) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+    align-content: center;
+  }
+}
+
+/************** 480px / 16px = 30em **************/
+@media (max-width: 30em) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+    align-content: center;
+  }
+}
